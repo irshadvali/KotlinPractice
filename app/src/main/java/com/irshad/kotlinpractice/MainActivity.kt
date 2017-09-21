@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        tvAge.setText("");
+        tvAge.setText("Your age will display here.");
 
 
     }
@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         val age = currentYear - dob.toInt()
         if((dob.toInt()<= currentYear) && (dob.length==4)){
             if(age>0){
-                tvAge.setText("Your age is $age")
+                tvAge.setText("Your age is $age .")
             }
             else{
                 tvAge.setText("Please enter valid year")
