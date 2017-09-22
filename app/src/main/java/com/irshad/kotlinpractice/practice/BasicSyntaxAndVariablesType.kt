@@ -3,7 +3,7 @@ package com.irshad.kotlinpractice.practice
 /**
  * Created by irshadvali on 22/09/17.
  */
-fun main(args: Array< String>){
+fun main(args: Array<String>) {
 
     /*
     String Define
@@ -23,7 +23,6 @@ fun main(args: Array< String>){
     Float Define
      */
     var myDecimal = 5.8
-
     println(myDecimal)
 
     /*
@@ -31,8 +30,8 @@ fun main(args: Array< String>){
      */
 
     var mySecondString: String
-    mySecondString="irshad vali"
 
+    mySecondString = "irshad vali"
     println(mySecondString)
 
 
@@ -40,11 +39,8 @@ fun main(args: Array< String>){
     For Constant value
      */
 
-
-    val myAnotherString= "this is constant value."
-
+    val myAnotherString = "this is constant value."
     println(myAnotherString)
-
 
 
 }
