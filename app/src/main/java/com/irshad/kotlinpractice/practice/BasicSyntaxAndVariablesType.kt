@@ -4,10 +4,6 @@ package com.irshad.kotlinpractice.practice
  * Created by irshadvali on 22/09/17.
  */
 fun main(args: Array< String>){
-    /*
-    Hello irshad print
-    */
-    println("Hello Irshad")
 
     /*
     String Define
@@ -45,7 +41,7 @@ fun main(args: Array< String>){
      */
 
 
-    val myAnotherString= "this is constant value"
+    val myAnotherString= "this is constant value."
 
     println(myAnotherString)
 
