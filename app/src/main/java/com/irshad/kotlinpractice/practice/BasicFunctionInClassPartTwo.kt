@@ -15,7 +15,8 @@ fun main(args: Array<String>) {
 class CityName {
     var cityName: String = ""
     fun displayCityName(cityName: String) {
-        println(cityName)
+        println("the city name is "+cityName)
+        println("the city name is ${ cityName }")
     }
 }
 
