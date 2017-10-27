@@ -1,8 +1,10 @@
 package com.irshad.kotlinpractice
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.irshad.kotlinpractice.uiactivity.RecyclerViewActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 
@@ -13,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         tvAge.setText("Your age will display here.");
+//        https://www.simplifiedcoding.net/kotlin-recyclerview-example/
 
 
     }
@@ -35,5 +38,13 @@ class MainActivity : AppCompatActivity() {
             tvAge.setText("Please enter valid year")
         }
 
+    }
+
+
+    public fun showlist(view: View){
+       val INTENT_DATA_PASS ="datapass"
+        val intent = Intent(this, RecyclerViewActivity::class.java)
+        intent.putExtra(INTENT_DATA_PASS,"Company List")
+         startActivity(intent)
     }
 }
