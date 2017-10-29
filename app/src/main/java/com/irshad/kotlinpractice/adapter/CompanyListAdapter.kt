@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import android.widget.Toast
 import com.irshad.kotlinpractice.R
 import com.irshad.kotlinpractice.model.Company
 
@@ -37,6 +38,14 @@ class CompanyListAdapter(val companyList: ArrayList<Company>) : RecyclerView.Ada
             val companyLocation  = itemView.findViewById(R.id.tvLocation) as TextView
             companyName.text = company.cname
             companyLocation.text = company.clocation
+            val cardview=itemView.findViewById(R.id.cardview);
+            val infoicon=itemView.findViewById(R.id.infoicon);
+
+            infoicon.setOnClickListener(View.OnClickListener {
+
+                    Toast.makeText(cardview.context," Company Name :"+ company.cname +" Address :"+ company.clocation, Toast.LENGTH_LONG).show()
+                })
+
         }
     }
 }
